@@ -11,30 +11,19 @@
      endif
   endif
   let g:colors_name="OceanicNext"
-
-"" Colors {{{
-"  let s:base00 = ['#1b2b34', '235']
-"  let s:base01 = ['#343d46', '237']
-"  let s:base02 = ['#4f5b66', '240']
-"  let s:base03 = ['#65737e', '243']
-"  let s:base04 = ['#a7adba', '145']
-"  let s:base05 = ['#c0c5ce', '251']
-"  let s:base06 = ['#cdd3de', '252']
-"  let s:base07 = ['#d8dee9', '253']
-"  let s:red    = ['#ec5f67', '203']
-"  let s:orange = ['#f99157', '209']
-"  let s:yellow = ['#fac863', '221']
-"  let s:green  = ['#99c794', '114']
-"  let s:cyan   = ['#62b3b2', '73']
-"  let s:blue   = ['#6699cc', '68']
-"  let s:purple = ['#c594c5', '176']
-"  let s:brown  = ['#ab7967', '137']
-"  let s:white  = ['#ffffff', '15']
-"  let s:none   = ['NONE',    'NONE']
-"" }}}
-
 " Colors {{{
-  " --- Modified to match Carbon's Oceanic Next theme ---
+  let s:background = ['#304148', '237']
+  let s:comment    = ['#65737E', '243']
+  let s:text       = ['#f8f8f2', '231']
+  let s:variable   = s:text " Carbon uses the same color for text and variables
+  let s:white      = ['#ffffff', '15']
+  let s:operator   = s:white
+
+  let s:keyword    = ['#C594C5', '176'] " Also for attribute, tag
+  let s:definition = ['#6699CC', '68']
+  let s:property   = ['#99C794', '114'] " Also for string
+  let s:string     = s:property
+  let s:number     = ['#F99157', '209']
 
   " Background colors
   let s:base00 = ['#29383f', '236']  
@@ -46,6 +35,19 @@
   let s:base06 = ['#ffffff', '15']   
   let s:base07 = ['#ffffff', '15']   
 
+  " Mapping Start
+  let s:red    = s:keyword  " We'll map unused colors to ones we have
+  let s:orange = s:number
+  let s:yellow = s:definition " Remap to something useful
+  let s:green  = s:string
+  let s:cyan   = s:definition " Remap to something useful
+  let s:blue   = s:definition
+  let s:purple = s:keyword
+  let s:brown  = s:comment
+  let s:none   = ['NONE',    'NONE']
+  " Mapping End
+
+  " Legacy Colors
   "let s:red    = ['#ec5f67', '203']  
   let s:orange = ['#F99157', '209']  
   "let s:yellow = ['#fac863', '221']  
@@ -56,7 +58,6 @@
   let s:brown  = ['#ab7967', '137']  
   let s:white  = ['#ffffff', '15']   
   let s:none   = ['NONE',    'NONE']
-
   let s:yellow = s:cyan
   let s:red = s:base06
 " }}}

@@ -94,13 +94,16 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('Float',                             a:orange, '',       '',          '')
   call s:hi('Function',                          a:blue,   '',       '',          '')
 
+  "call s:hi('Identifier',                        a:cyan,   '',       '',          '')
+  call s:hi('Identifier',                        a:base05,   '',       '',          '')
   call s:hi('Identifier',                        a:cyan,   '',       '',          '')
   call s:hi('Include',                           a:purple, '',       '',          '')
   call s:hi('Keyword',                           a:purple, '',       '',          '')
 
   call s:hi('Label',                             a:yellow, '',       '',          '')
   call s:hi('Number',                            a:orange, '',       '',          '')
-  call s:hi('Operator',                          a:orange, '',       '',          '')
+  "call s:hi('Operator',                          a:orange, '',       '',          '')
+  call s:hi('Operator',                          a:white, '',       '',          '')
   call s:hi('PreProc',                           a:yellow, '',       '',          '')
   call s:hi('Repeat',                            a:yellow, '',       '',          '')
   call s:hi('Special',                           a:cyan,   '',       '',          '')
