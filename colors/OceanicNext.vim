@@ -50,24 +50,24 @@
 
 " }}}
 
-"call oceanic_next#highlight(
-"  \ s:base00,
-"  \ s:base01,
-"  \ s:base02,
-"  \ s:base03,
-"  \ s:base04,
-"  \ s:base05,
-"  \ s:base06,
-"  \ s:base07,
-"  \ s:red,
-"  \ s:orange,
-"  \ s:yellow,
-"  \ s:green,
-"  \ s:cyan,
-"  \ s:blue,
-"  \ s:purple,
-"  \ s:brown,
-"  \ s:white,
-"  \ s:none
-"  \)
+call oceanic_next#highlight(
+  \ s:base00,
+  \ s:base01,
+  \ s:base02,
+  \ s:base03,
+  \ s:base04,
+  \ s:base05,
+  \ s:base06,
+  \ s:base07,
+  \ s:red,
+  \ s:orange,
+  \ s:yellow,
+  \ s:green,
+  \ s:cyan,
+  \ s:blue,
+  \ s:purple,
+  \ s:brown,
+  \ s:white,
+  \ s:none
+  \)
 set background=dark
