@@ -49,17 +49,17 @@
 
   " Legacy Colors
   "let s:red    = ['#ec5f67', '203']  
-  let s:orange = ['#F99157', '209']  
   "let s:yellow = ['#fac863', '221']  
-  let s:green  = ['#99C794', '114'] 
-  let s:cyan   = ['#62b3b2', '73']   
-  let s:blue   = ['#6699CC', '68']   
-  let s:purple = ['#C594C5', '176']  
-  let s:brown  = ['#ab7967', '137']  
-  let s:white  = ['#ffffff', '15']   
-  let s:none   = ['NONE',    'NONE']
-  let s:yellow = s:cyan
-  let s:red = s:base06
+  "let s:orange = ['#F99157', '209']  
+  "let s:green  = ['#99C794', '114'] 
+  "let s:cyan   = ['#62b3b2', '73']   
+  "let s:blue   = ['#6699CC', '68']   
+  "let s:purple = ['#C594C5', '176']  
+  "let s:brown  = ['#ab7967', '137']  
+  "let s:white  = ['#ffffff', '15']   
+  "let s:none   = ['NONE',    'NONE']
+  "let s:yellow = s:cyan
+  "let s:red = s:base06
 " }}}
 
 call oceanic_next#highlight(
