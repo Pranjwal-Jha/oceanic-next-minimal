@@ -25,6 +25,7 @@
   let s:string     = s:property
   let s:number     = ['#F99157', '209']
   let s:typehint   = ['#62b3b2', '73']   " Cyan for type hints
+
   " Background colors
   let s:base00 = ['#29383f', '236']  
   let s:base01 = ['#304148', '237']  
@@ -40,26 +41,13 @@
   let s:orange = s:number
   let s:yellow = s:definition " Remap to something useful
   let s:green  = s:string
-  let s:cyan   = s:typehint " Remap to something useful
+  let s:cyan   = s:typehint 
   let s:blue   = s:definition
   let s:purple = s:keyword
   let s:brown  = s:comment
   let s:none   = ['NONE',    'NONE']
   " Mapping End
 
-  " Legacy Colors
-  "let s:red    = ['#ec5f67', '203']  
-  "let s:yellow = ['#fac863', '221']  
-  "let s:orange = ['#F99157', '209']  
-  "let s:green  = ['#99C794', '114'] 
-  "let s:cyan   = ['#62b3b2', '73']   
-  "let s:blue   = ['#6699CC', '68']   
-  "let s:purple = ['#C594C5', '176']  
-  "let s:brown  = ['#ab7967', '137']  
-  "let s:white  = ['#ffffff', '15']   
-  "let s:none   = ['NONE',    'NONE']
-  "let s:yellow = s:cyan
-  "let s:red = s:base06
 " }}}
 
 call oceanic_next#highlight(
