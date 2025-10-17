@@ -96,7 +96,6 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
 
   "call s:hi('Identifier',                        a:cyan,   '',       '',          '')
   call s:hi('Identifier',                        a:base05,   '',       '',          '')
-  call s:hi('Identifier',                        a:cyan,   '',       '',          '')
   call s:hi('Include',                           a:purple, '',       '',          '')
   call s:hi('Keyword',                           a:purple, '',       '',          '')
 
@@ -114,8 +113,13 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('Structure',                         a:purple, '',       '',          '')
   call s:hi('Tag',                               a:yellow, '',       '',          '')
   call s:hi('Todo',                              a:yellow, a:base01, '',          '')
-  call s:hi('Type',                              a:purple, '',       s:italic,    '')
-  call s:hi('Typedef',                           a:purple, '',       s:italic,    '')
+  "call s:hi('Type',                              a:purple, '',       s:italic,    '')
+  "call s:hi('Typedef',                           a:purple, '',       s:italic,    '')
+  call s:hi('Type',                              a:base05, '',       s:italic,    '')
+  call s:hi('Typedef',                           a:base05, '',       s:italic,    '')
+
+  " Python changes
+  call s:hi('pythonBuiltin',                     a:cyan,   '',       '',          '')
 
   call s:hi('SpellBad',                          '',       '',       'undercurl', '')
   call s:hi('SpellLocal',                        '',       '',       'undercurl', '')
@@ -285,16 +289,19 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@punctuation.delimiter',            a:cyan,   '',       '',          '')
     call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
     call s:hi('@parameter',                        a:base07, '',       '',          '')
-    call s:hi('@type',                             a:yellow, '',       '',          '')
+    call s:hi('@type',                             a:base05, '',       '',          '')
+    call s:hi('@type.builtin',                     a:cyan, '',       '',          '')
     call s:hi('@function',                         a:blue,   '',       '',          '')
 
     call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
     call s:hi('@property',                         a:base07, '',       '',          '')
     call s:hi('@method',                           a:blue,   '',       '',          '')
-    call s:hi('@parameter',                        a:yellow, '',       '',          '')
-    call s:hi('@constructor',                      a:base07, '',       '',          '')
+    call s:hi('@parameter',                        a:base05, '',       '',          '')
+    "call s:hi('@constructor',                      a:base07, '',       '',          '')
+    call s:hi('@constructor',                      a:blue, '',       '',          '')
     call s:hi('@variable',                         a:base06, '',       '',          '')
-    call s:hi('@operator',                         a:orange, '',       '',          '')
+    "call s:hi('@operator',                         a:orange, '',       '',          '')
+    call s:hi('@operator',                         a:white, '',       '',          '')
     call s:hi('@tag',                              a:base07, '',       '',          '')
     call s:hi('@keyword',                          a:purple, '',       '',          '')
     call s:hi('@keyword.operator',                 a:purple, '',       '',          '')
