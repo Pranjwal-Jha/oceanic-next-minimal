@@ -284,36 +284,34 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
 
 	if has('nvim')
     " TreeSitter stuff
-    call s:hi('@punctuation.bracket',              a:cyan,   '',       '',          '')
-    call s:hi('@punctuation.delimiter',            a:cyan,   '',       '',          '')
     call s:hi('@type.builtin',                     a:cyan, '',       '',          '')
-    call s:hi('@punctuation.special',              a:cyan,   '',       '',          '')
-    call s:hi('@tag.delimiter',                    a:cyan,   '',       '',          '')
     call s:hi('@label',                            a:cyan,   '',       '',          '')
 
-    call s:hi('@parameter',                        a:base07, '',       '',          '')
-    call s:hi('@property',                         a:base07, '',       '',          '')
-    call s:hi('@tag',                              a:base07, '',       '',          '')
-    call s:hi('@namespace',                        a:base07, '',       '',          '')
+    call s:hi('@property',                         a:base05, '',       '',          '')
+    call s:hi('@tag',                              a:base05, '',       '',          '')
+    call s:hi('@namespace',                        a:base05, '',       '',          '')
 
     call s:hi('@function',                         a:blue,   '',       '',          '')
     call s:hi('@method',                           a:blue,   '',       '',          '')
     call s:hi('@constructor',                      a:blue, '',       '',          '')
 
-    call s:hi('@include',                          a:purple, '',       '',          '')
     call s:hi('@keyword',                          a:purple, '',       '',          '')
     call s:hi('@keyword.operator',                 a:purple, '',       '',          '')
     call s:hi('@conditional',                      a:purple, '',       '',          '')
 
+    call s:hi('@tag.delimiter',                    a:base05,   '',       '',          '')
+    call s:hi('@punctuation.special',              a:base05,   '',       '',          '')
+    call s:hi('@punctuation.delimiter',            a:base05,   '',       '',          '')
+    call s:hi('@punctuation.bracket',              a:base05,   '',       '',          '')
     call s:hi('@type',                             a:base05, '',       '',          '')
+    call s:hi('@include',                          a:base05, '',       '',          '')
     call s:hi('@parameter',                        a:base05, '',       '',          '')
-
-    call s:hi('@variable',                         a:base06, '',       '',          '')
+    call s:hi('@variable',                         a:base05, '',       '',          '')
+    call s:hi('@variable.builtin',                 a:base05,    '',       '',          '')
 
     call s:hi('@operator',                         a:white, '',       '',          '')
 
-    call s:hi('@variable.builtin',                 a:red,    '',       '',          '')
-    call s:hi('@exception',                        a:red,    '',       '',          '')
+    call s:hi('@exception',                        a:purple,    '',       '',          '')
 
     call s:hi('@symbol',                           a:green,  '',       '',          '')
   endif
