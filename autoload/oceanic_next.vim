@@ -95,7 +95,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
 
   "call s:hi('Identifier',                        a:cyan,   '',       '',          '')
   call s:hi('Identifier',                        a:base05,   '',       '',          '')
-  call s:hi('Include',                           a:purple, '',       '',          '')
+  call s:hi('Include',                           a:base05, '',       '',          '')
   call s:hi('Keyword',                           a:purple, '',       '',          '')
 
   call s:hi('Label',                             a:yellow, '',       '',          '')
@@ -114,8 +114,8 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
   call s:hi('Todo',                              a:yellow, a:base01, '',          '')
   "call s:hi('Type',                              a:purple, '',       s:italic,    '')
   "call s:hi('Typedef',                           a:purple, '',       s:italic,    '')
-  call s:hi('Type',                              a:base05, '',       s:italic,    '')
-  call s:hi('Typedef',                           a:base05, '',       s:italic,    '')
+  call s:hi('Type',                              a:blue, '',       s:italic,    '')
+  call s:hi('Typedef',                           a:blue, '',       s:italic,    '')
 
   " Python changes
   call s:hi('pythonBuiltin',                     a:cyan,   '',       '',          '')
@@ -302,7 +302,7 @@ function! oceanic_next#highlight( base00, base01, base02, base03, base04, base05
     call s:hi('@punctuation.special',              a:base05,   '',       '',          '')
     call s:hi('@punctuation.delimiter',            a:base05,   '',       '',          '')
     call s:hi('@punctuation.bracket',              a:base05,   '',       '',          '')
-    call s:hi('@type',                             a:base05, '',       '',          '')
+    call s:hi('@type',                             a:blue, '',       '',          '')
     call s:hi('@include',                          a:base05, '',       '',          '')
     call s:hi('@parameter',                        a:base05, '',       '',          '')
     call s:hi('@variable',                         a:base05, '',       '',          '')
